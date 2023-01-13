@@ -13,6 +13,7 @@ public class Member {
     private int previousClanRank;
     private int donations;
     private int donationsReceived;
+    private PlayerHouse playerHouse;
 
     public String getTag() {
 		return tag;
@@ -79,6 +80,12 @@ public class Member {
 	}
 	public void setDonationsReceived(int donationsReceived) {
 		this.donationsReceived = donationsReceived;
+	}
+	public PlayerHouse getPlayerHouse() {
+		return playerHouse;
+	}
+	public void setPlayerHouse(PlayerHouse playerHouse) {
+		this.playerHouse = playerHouse;
 	}
 
 }

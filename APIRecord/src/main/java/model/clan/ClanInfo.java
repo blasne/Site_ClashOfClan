@@ -11,10 +11,14 @@ public class ClanInfo {
 	private String type;
 	private String description;
 	private Location location;	
+	@JsonProperty(value="isFamilyFriendly")
+	private boolean isFamilyFriendly;
 	private BadgeUrl badgeUrls;
 	private int clanLevel;
 	private int clanPoints;
 	private int clanVersusPoints;
+	private int clanCapitalPoints;
+	private CapitalLeague capitalLeague;
 	private int requiredTrophies;
 	private String warFrequency;
 	private int warWinStreak;
@@ -168,6 +172,24 @@ public class ClanInfo {
 	}
 	public void setClanCapital(Capital clanCapital) {
 		this.clanCapital = clanCapital;
+	}
+	public boolean isFamilyFriendly() {
+		return isFamilyFriendly;
+	}
+	public void setFamilyFriendly(boolean isFamilyFriendly) {
+		this.isFamilyFriendly = isFamilyFriendly;
+	}
+	public int getClanCapitalPoints() {
+		return clanCapitalPoints;
+	}
+	public void setClanCapitalPoints(int clanCapitalPoints) {
+		this.clanCapitalPoints = clanCapitalPoints;
+	}
+	public CapitalLeague getCapitalLeague() {
+		return capitalLeague;
+	}
+	public void setCapitalLeague(CapitalLeague capitalLeague) {
+		this.capitalLeague = capitalLeague;
 	}
 	
 	
